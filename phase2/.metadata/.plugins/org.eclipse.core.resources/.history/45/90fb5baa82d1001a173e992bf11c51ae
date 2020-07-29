@@ -26,22 +26,12 @@ public class HelloJdbc {
 			
 			//Step3
 			Statement statement=connection.createStatement();
-			String sql="select id,name,age,city,gender,contact from customer";
+			String sql="select id,name,age,city,gender,contact from customer1";
 			
 			//Step4
 			ResultSet resultSet=statement.executeQuery(sql);
 			System.out.println("Query executed");
 			
-			//Step5
-			System.out.println("\nCustomer Details are : ");
-			while(resultSet.next()) {
-				System.out.print("Id - "+resultSet.getInt("id")+" Name - "+resultSet.getString("name"));
-				System.out.print(" Age - "+resultSet.getInt("age") );
-				System.out.print(" Contact - "+resultSet.getLong("contact"));
-				System.out.print(" Gender - "+resultSet.getString("gender"));
-				System.out.println(" City - "+resultSet.getString("city"));
-			}
-			System.out.println("Results Processed");
 			
 		} catch (ClassNotFoundException e) {
 			System.out.println(e);

@@ -2,7 +2,6 @@ package com.jdbc.demo;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -28,20 +27,6 @@ public class HelloJdbc {
 			Statement statement=connection.createStatement();
 			String sql="select id,name,age,city,gender,contact from customer";
 			
-			//Step4
-			ResultSet resultSet=statement.executeQuery(sql);
-			System.out.println("Query executed");
-			
-			//Step5
-			System.out.println("\nCustomer Details are : ");
-			while(resultSet.next()) {
-				System.out.print("Id - "+resultSet.getInt("id")+" Name - "+resultSet.getString("name"));
-				System.out.print(" Age - "+resultSet.getInt("age") );
-				System.out.print(" Contact - "+resultSet.getLong("contact"));
-				System.out.print(" Gender - "+resultSet.getString("gender"));
-				System.out.println(" City - "+resultSet.getString("city"));
-			}
-			System.out.println("Results Processed");
 			
 		} catch (ClassNotFoundException e) {
 			System.out.println(e);

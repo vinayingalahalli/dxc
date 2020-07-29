@@ -41,7 +41,6 @@ public class HelloJdbc {
 				System.out.print(" Gender - "+resultSet.getString("gender"));
 				System.out.println(" City - "+resultSet.getString("city"));
 			}
-			System.out.println("Results Processed");
 			
 		} catch (ClassNotFoundException e) {
 			System.out.println(e);
