@@ -1,0 +1,12 @@
+package com.dbutil;
+
+import java.sql.Connection;
+
+public class MySqlDbConnection {
+
+	private static Connection connection;
+	
+	private MySqlDbConnection() {
+		// TODO Auto-generated constructor stub
+	}
+}

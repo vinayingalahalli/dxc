@@ -1,0 +1,21 @@
+package com.dbutil;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class MySqlDbConnection {
+
+	private static Connection connection;
+	
+	private MySqlDbConnection() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Connection getConnection() throws ClassNotFoundException {
+		Class.forName("com.mysql.jdbc.Driver");
+		String url="jdbc:mysql://localhost:3306/dxc";
+		String username="root";
+		String password="root";
+		connection=DriverManager.getConnection(url, username, password);
+	}
+}

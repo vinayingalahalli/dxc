@@ -1,0 +1,10 @@
+package com.jdbc.demo.insert;
+
+public class InsertCustomer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

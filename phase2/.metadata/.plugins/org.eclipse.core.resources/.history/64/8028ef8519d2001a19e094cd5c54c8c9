@@ -1,0 +1,16 @@
+package com.jdbc.demo.insert;
+
+public class Customer {
+
+	private int id;
+	private String name;
+	private String city;
+	private String gender;
+	private int age;
+	private long contact;
+	
+	public Customer() {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

@@ -1,0 +1,32 @@
+package com.jdbc.demo.insert;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.dbutil.MySqlDbConnection;
+
+public class InsertCustomer {
+
+	public static void main(String[] args) {
+		
+		Customer c1=new Customer(108, "Umesh", "Bangalore", "M", 22, 1234567891L);
+
+	}
+	
+	public int addCustomer(Customer customer) {
+		int c=0;
+		Connection connection;
+		try {
+			connection = MySqlDbConnection.getConnection();
+			String sql="insert into customer(id,name,city,age,gender,contact) values(?,?,?,?,?,?)";
+			PreparedStatement preparedStatement=connection.prepareStatement(sql);
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		};
+		
+		return c;
+	}
+
+}

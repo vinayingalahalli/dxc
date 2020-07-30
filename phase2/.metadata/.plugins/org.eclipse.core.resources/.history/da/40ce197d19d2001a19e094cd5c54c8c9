@@ -1,0 +1,5 @@
+package com.jdbc.demo.insert;
+
+public class Customer {
+
+}

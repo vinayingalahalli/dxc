@@ -1,0 +1,24 @@
+package com.jdbc.demo.insert;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.dbutil.MySqlDbConnection;
+
+public class InsertCustomer {
+
+	public static void main(String[] args) {
+		
+		Customer c1=new Customer(108, "Umesh", "Bangalore", "M", 22, 1234567891L);
+
+	}
+	
+	public int addCustomer(Customer customer) {
+		int c=0;
+		Connection connection=MySqlDbConnection.getConnection();;
+		String sql="insert into customer(id,name,city,age,gender,contact) values(?,?,?,?,?,?)";
+		PreparedStatement preparedStatement=connection.prepareStatement(sql);
+		return c;
+	}
+
+}
