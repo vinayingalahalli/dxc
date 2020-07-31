@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>servletconfig_servletcontext_demo</display-name>
+
+	<servlet>
+		<description></description>
+		<display-name>Servlet1</display-name>
+		<servlet-name>Servlet1</servlet-name>
+		<servlet-class>com.servlets.Servlet1</servlet-class>
+		<init-param>
+			<param-name>query1</param-name>
+			<param-value>select * from somethinggg</param-value>
+		</init-param>
+		<init-param>
+			<param-name>path</param-name>
+			<param-value>path is in somewhere in d drive</param-value>
+		</init-param>
+		<init-param>
+			<param-name>query2</param-name>
+			<param-value>select * from somethinggg again again</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet1</servlet-name>
+		<url-pattern>/Servlet1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>Servlet2</display-name>
+		<servlet-name>Servlet2</servlet-name>
+		<servlet-class>com.servlets.Servlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet2</servlet-name>
+		<url-pattern>/Servlet2</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<param-name>driver</param-name>
+		<param-value>com.mysql.jdbc.Driver</param-value>
+	</context-param>
+	<context-param>
+		<param-name>url</param-name>
+		<param-value>jdbc:mysql:localhost:2211212</param-value>
+	</context-param>
+	<context-param>
+		<param-name>username</param-name>
+		<param-value>rootuser</param-value>
+	</context-param>
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>rootpass</param-value>
+	</context-param>
+</web-app>

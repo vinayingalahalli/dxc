@@ -5,10 +5,11 @@
 <title>Welcome</title>
 </head>
 <body>
-<h1>Welcone Page for Servlet</h1>
+<h1>Welcome Page for Servlet</h1>
 <br/>
 <br/>
 <form action="abc">
+<input type="text" name="fname">
 <input type="submit" value="Click here for doGet()">
 </form>
 
@@ -16,6 +17,21 @@
 <br/>
 
 <form action="abc" method="post">
+Enter Name <input type="text" name="fname"><br/>
+Enter age <input type="number" name="age"><br/>
+Select Gender   <input type="radio" value="Female" name="gender">F &nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" value="Male" name="gender" >M <br/>
+Select Country <select name="country">
+<option value="INDIA">IND</option>
+<option value="Other">OTH</option>
+</select><br/>
+Hobbies<br/>
+<input type="checkbox" name="hobby" value="gaming">Gaming<br/>
+<input type="checkbox" name="hobby" value="dance">Dance<br/>
+<input type="checkbox" name="hobby" value="swimming">Swim<br/>
+<input type="checkbox" name="hobby" value="social">Social N/wing<br/>
+<input type="checkbox" name="hobby" value="other hobby">other<br/>
+<br/>
 <input type="submit" value="Click here for doPost()">
 </form>
 

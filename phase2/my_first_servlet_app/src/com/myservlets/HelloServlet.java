@@ -2,6 +2,7 @@ package com.myservlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Arrays;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -38,6 +39,7 @@ public class HelloServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		out.print("<h1>Hello from doGet()</h1>");
+		out.print("<h2>Welcome "+request.getParameter("fname")+"</h2>");
 	}
 
 	/**
@@ -47,6 +49,11 @@ public class HelloServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		out.print("<h1>Hello from doPost()</h1>");
+		out.print("<h2>Welcome "+request.getParameter("fname")+"</h2>");
+		out.print("<h2>Age "+request.getParameter("age")+"</h2>");
+		out.print("<h2>Gender "+request.getParameter("gender")+"</h2>");
+		out.print("<h2>Country "+request.getParameter("country")+"</h2>");
+		out.print("<h2>Hobbies "+Arrays.toString(request.getParameterValues("hobby"))+"</h2>");
 	}
 
 }
