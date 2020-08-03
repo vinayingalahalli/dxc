@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.login.exception.BusinessException;
 import com.login.model.User;
@@ -44,8 +45,11 @@ public class LoginController extends HttpServlet {
 		try {
 			if(service.isValidUserCredentials(user)) {
 				//valid user
-				rd=request.getRequestDispatcher("success");
-				rd.forward(request, response);
+			//	rd=request.getRequestDispatcher("success");
+			//	rd.forward(request, response);
+				HttpSession session=request.getSession();
+				session.setAttribute("username", user.getUsername());
+				response.sendRedirect("success");
 			}
 		} catch (BusinessException e) {
 			//failure or invalid creds

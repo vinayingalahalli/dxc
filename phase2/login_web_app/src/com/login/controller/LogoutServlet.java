@@ -2,7 +2,6 @@ package com.login.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -11,15 +10,15 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class SuccessPage
+ * Servlet implementation class LogoutServlet
  */
-public class SuccessPage extends HttpServlet {
+public class LogoutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public SuccessPage() {
+    public LogoutServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,12 +33,8 @@ public class SuccessPage extends HttpServlet {
 		if(session==null) {
 			out.print("<center><h2>Please Login First</h2></center>");
 		}else {
-//		out.print("<h3>Welcome "+request.getParameter("username")+"</h3>");
-//		out.print("<h3>You have logged in successfully at "+new Date()+" </h3>");
-//		out.print("<a href='/login_web_app'>Logout</a>");
-			out.print("<h3> Hello "+session.getAttribute("username")+" </h3>");
-			out.print("<h3>You have logged in successfully at "+new Date(session.getCreationTime())+" </h3>");
-			out.print("<a href='logout'>Logout</a>");
+			session.invalidate();
+			response.sendRedirect("/login_web_app");
 		}
 	}
 
