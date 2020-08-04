@@ -7175,3 +7175,34 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-04 10:14:52.051
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.PLkiCSSI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-04 10:14:52.064
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.PLkiCSSI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-04 10:14:52.071
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-04 10:14:52.078
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.PLkiCSSI => OK
+
+!ENTRY org.eclipse.wst.sse.core 4 4 2020-08-04 12:32:08.212
+!MESSAGE can not get a buffer without a document reference
+!STACK 0
+java.lang.IllegalArgumentException: can not get a buffer without a document reference
+	at org.eclipse.wst.sse.core.internal.FileBufferModelManager.getBuffer(FileBufferModelManager.java:691)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.getModelPath(JSPTranslator.java:3276)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslator.writeExternal(JSPTranslator.java:3383)
+	at java.io.ObjectOutputStream.writeExternalData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslatorPersister.persistTranslator(JSPTranslatorPersister.java:265)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslatorPersister.persistTranslation(JSPTranslatorPersister.java:149)
+	at org.eclipse.jst.jsp.core.internal.java.search.JSPIndexManager.performAction(JSPIndexManager.java:139)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob$1.run(AbstractIndexManager.java:1561)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.sse.core.indexing.AbstractIndexManager$ResourceEventProcessingJob.run(AbstractIndexManager.java:1559)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
