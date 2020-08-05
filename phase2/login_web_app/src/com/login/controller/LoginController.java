@@ -49,13 +49,19 @@ public class LoginController extends HttpServlet {
 			//	rd.forward(request, response);
 				HttpSession session=request.getSession();
 				session.setAttribute("username", user.getUsername());
-				response.sendRedirect("success");
+				//response.sendRedirect("success");
+				response.sendRedirect("success.jsp");
 			}
 		} catch (BusinessException e) {
 			//failure or invalid creds
-			rd=request.getRequestDispatcher("login.html");
+//			rd=request.getRequestDispatcher("login.html");
+//			rd.include(request, response);
+//			out.print("<center><span style='color:red;'>"+e.getMessage()+"</center>");
+
+			request.setAttribute("error", e.getMessage());
+			rd=request.getRequestDispatcher("login.jsp");
 			rd.include(request, response);
-			out.print("<center><span style='color:red;'>"+e.getMessage()+"</center>");
+			
 		}
 		
 	}
