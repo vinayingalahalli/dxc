@@ -1,5 +1,0 @@
-package com.jdbc.demo.dao;
-
-public class CustomerDAO {
-
-}
