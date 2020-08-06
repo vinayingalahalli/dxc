@@ -5,8 +5,6 @@
 <fullyQualifiedTypeName name="com.jdbc.demo.insert.InsertCustomer"/>
 <fullyQualifiedTypeName name="com.jdbc.demo.dao.CustomerDAO"/>
 <fullyQualifiedTypeName name="com.jdbc.demo.insert.Customer"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.batch.demo.Customer"/>
 <fullyQualifiedTypeName name="java.sql.SQLClientInfoException"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -26,9 +24,22 @@
 <fullyQualifiedTypeName name="com.oracle.jrockit.jfr.RequestDelegate"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="com.model.User"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.io.StringWriter"/>
+<fullyQualifiedTypeName name="com.customer.exception.BusinessException"/>
+<fullyQualifiedTypeName name="com.customer.dao.CustomerDAO"/>
+<fullyQualifiedTypeName name="com.customer.dao.impl.CustomerDAOImpl"/>
+<fullyQualifiedTypeName name="com.customer.service.CustomerService"/>
+<fullyQualifiedTypeName name="com.customer.service.impl.CustomerServiceImpl"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="javax.servlet.jsp.tagext.SimpleTagSupport"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
+<fullyQualifiedTypeName name="com.customer.model.Customer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

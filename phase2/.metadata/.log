@@ -12108,3 +12108,345 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 15:12:33.393
 !MESSAGE executing callback sts4.classpath.nRcYTawT SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 16:08:46.833
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.nRcYTawT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 16:08:46.842
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.nRcYTawT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 16:08:46.847
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-05 16:08:46.853
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.nRcYTawT => OK
+!SESSION 2020-08-06 09:44:05.205 -----------------------------------------------
+eclipse.buildId=4.6.0.202003181317-RELEASE
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2020-08-06 09:44:19.298
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-08-06 09:44:19.298
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7d70ba18,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6a07e6ca,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-08-06 09:44:25.668
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\revature'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2020-08-06 09:48:59.573
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:16.864
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:16.869
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1f8c4393[org.springframework.tooling.boot.ls:1.15.0.202003180840(id=1029)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:16.882
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:17.078
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.047
+!MESSAGE Boot LS startup time from start to initialized: 3141ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.199
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CdRExvznisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.205
+!MESSAGE Sorting projects...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.212
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.217
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.222
+!MESSAGE Sorting projects... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.227
+!MESSAGE inside synchronized Subscriptions
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.231
+!MESSAGE subscribing to classpath changes: sts4.classpath.CdRExvzn isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.237
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.244
+!MESSAGE subsribers = {sts4.classpath.CdRExvzn=Send Classpath Notifications(254)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.250
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.256
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.261
+!MESSAGE Preparing classpath changed notification hibernate_demo-1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.266
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CdRExvzn => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.271
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.279
+!MESSAGE classpath=37 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.284
+!MESSAGE buffering callback sts4.classpath.CdRExvzn hibernate_demo-1 false 37
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.290
+!MESSAGE Preparing classpath changed notification cookie_demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.299
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.305
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.310
+!MESSAGE buffering callback sts4.classpath.CdRExvzn cookie_demo false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.315
+!MESSAGE Preparing classpath changed notification filter_demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.320
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.325
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.331
+!MESSAGE buffering callback sts4.classpath.CdRExvzn filter_demo false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.338
+!MESSAGE Preparing classpath changed notification hello_servlet_maven_app
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.343
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.348
+!MESSAGE classpath=25 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.354
+!MESSAGE buffering callback sts4.classpath.CdRExvzn hello_servlet_maven_app false 25
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.358
+!MESSAGE Preparing classpath changed notification jdbc_demo_2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.363
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.368
+!MESSAGE classpath=26 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.374
+!MESSAGE buffering callback sts4.classpath.CdRExvzn jdbc_demo_2 false 26
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.380
+!MESSAGE Preparing classpath changed notification jdbcdemo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.385
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.390
+!MESSAGE classpath=26 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.396
+!MESSAGE buffering callback sts4.classpath.CdRExvzn jdbcdemo false 26
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.400
+!MESSAGE Preparing classpath changed notification jsp_action_demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.405
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.410
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.417
+!MESSAGE buffering callback sts4.classpath.CdRExvzn jsp_action_demo false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.422
+!MESSAGE Preparing classpath changed notification jsp_custom_tag_demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.427
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.432
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.438
+!MESSAGE buffering callback sts4.classpath.CdRExvzn jsp_custom_tag_demo false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.443
+!MESSAGE Preparing classpath changed notification jsp_demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.447
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.452
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.459
+!MESSAGE buffering callback sts4.classpath.CdRExvzn jsp_demo false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.464
+!MESSAGE Preparing classpath changed notification jsp_directives_demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.470
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.475
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.480
+!MESSAGE buffering callback sts4.classpath.CdRExvzn jsp_directives_demo false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.485
+!MESSAGE Preparing classpath changed notification jsp_reflection_bean_demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.490
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.495
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.502
+!MESSAGE buffering callback sts4.classpath.CdRExvzn jsp_reflection_bean_demo false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.507
+!MESSAGE Preparing classpath changed notification jsp_servlet_jdbc_customer_search_app
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.512
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.518
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.523
+!MESSAGE buffering callback sts4.classpath.CdRExvzn jsp_servlet_jdbc_customer_search_app false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.528
+!MESSAGE Preparing classpath changed notification login_web_app
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.532
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.539
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.548
+!MESSAGE buffering callback sts4.classpath.CdRExvzn login_web_app false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.552
+!MESSAGE Preparing classpath changed notification my_first_servlet_app
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.557
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.561
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.567
+!MESSAGE buffering callback sts4.classpath.CdRExvzn my_first_servlet_app false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.571
+!MESSAGE Preparing classpath changed notification myfirstwebapp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.576
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.581
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.588
+!MESSAGE buffering callback sts4.classpath.CdRExvzn myfirstwebapp false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.593
+!MESSAGE Preparing classpath changed notification new_changes_servlet_demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.597
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.602
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.607
+!MESSAGE buffering callback sts4.classpath.CdRExvzn new_changes_servlet_demo false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.612
+!MESSAGE Preparing classpath changed notification servletconfig_servletcontext_demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.616
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.623
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.630
+!MESSAGE buffering callback sts4.classpath.CdRExvzn servletconfig_servletcontext_demo false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.634
+!MESSAGE Preparing classpath changed notification session_demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.639
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.645
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.650
+!MESSAGE buffering callback sts4.classpath.CdRExvzn session_demo false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.654
+!MESSAGE executing callback sts4.classpath.CdRExvzn 18 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-06 09:55:20.726
+!MESSAGE executing callback sts4.classpath.CdRExvzn SUCCESS [done]
+
+!ENTRY org.eclipse.jface 2 0 2020-08-06 10:59:52.445
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
+	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1976)
+	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
