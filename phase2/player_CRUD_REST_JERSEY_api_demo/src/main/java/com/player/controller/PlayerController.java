@@ -9,6 +9,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 import com.player.exception.BusinessException;
 import com.player.model.Player;
@@ -45,16 +46,31 @@ public class PlayerController {
 		}
 		return null;
 	}
+//Without exception handling	
+//	@Path("/{id}")
+//	@GET
+//	@Produces(MediaType.APPLICATION_JSON)
+//	public Player getPlayerById(@PathParam("id")int id) {
+//		
+//		try {
+//			return service.getPlayerById(id);
+//		} catch (BusinessException e) {
+//			return null;
+//		}
+//		
+//	}
 	
+
+//With Exception Handling	
 	@Path("/{id}")
 	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	public Player getPlayerById(@PathParam("id")int id) {
+	//@Produces(MediaType.APPLICATION_JSON)
+	public Response getPlayerById(@PathParam("id")int id) {
 		
 		try {
-			return service.getPlayerById(id);
+			return Response.ok(service.getPlayerById(id),MediaType.APPLICATION_JSON).build();
 		} catch (BusinessException e) {
-			return null;
+			return Response.status(Response.Status.NOT_FOUND).entity(e.getMessage()).build();
 		}
 		
 	}
