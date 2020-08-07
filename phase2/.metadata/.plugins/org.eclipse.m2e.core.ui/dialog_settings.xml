@@ -43,11 +43,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.player"/>
 			<item value="com.demo"/>
 			<item value="com.example"/>
 			<item value="com.jdbc.demo"/>
 		</list>
 		<list key="name">
+			<item value="player_CRUD_REST_JERSEY_api_demo"/>
 			<item value="hibernate_demo-3"/>
 			<item value="hibernate_demo-2"/>
 			<item value="hibernate_demo-1"/>
@@ -56,6 +58,7 @@
 			<item value="jdbcdemo"/>
 		</list>
 		<list key="artifactId">
+			<item value="player_CRUD_REST_JERSEY_api_demo"/>
 			<item value="hibernate_demo-3"/>
 			<item value="hibernate_demo-2"/>
 			<item value="hibernate_demo-1"/>

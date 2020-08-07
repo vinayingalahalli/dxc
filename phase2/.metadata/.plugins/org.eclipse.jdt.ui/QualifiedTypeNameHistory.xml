@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.sql.SQLClientInfoException"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="javax.servlet.ServletConfig"/>
-<fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
-<fullyQualifiedTypeName name="com.login.model.User"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="com.login.dao.LoginDAO"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="com.dbutil.MySqlDbConnection"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="org.hibernate.Query"/>
 <fullyQualifiedTypeName name="com.demo.model.Question"/>
 <fullyQualifiedTypeName name="com.demo.model.Answer"/>
+<fullyQualifiedTypeName name="javax.ws.rs.GET"/>
+<fullyQualifiedTypeName name="javax.ws.rs.POST"/>
+<fullyQualifiedTypeName name="javax.ws.rs.PUT"/>
+<fullyQualifiedTypeName name="javax.ws.rs.DELETE"/>
+<fullyQualifiedTypeName name="javax.ws.rs.Path"/>
+<fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
 </qualifiedTypeNameHistroy>
