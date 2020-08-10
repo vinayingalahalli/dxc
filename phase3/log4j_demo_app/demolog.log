@@ -1,0 +1,13 @@
+com.demo.Log4jMain TRACE  -   Hello from TRACE   2020.Aug.10  Monday 15:49:17 
+com.demo.Log4jMain DEBUG  -   HELLO from DEBUG   2020.Aug.10  Monday 15:49:17 
+com.demo.Log4jMain INFO  -   HELLO  from INFO   2020.Aug.10  Monday 15:49:17 
+com.demo.Log4jMain WARN  -   Hello from WARN   2020.Aug.10  Monday 15:49:17 
+com.demo.Log4jMain ERROR  -   Hello from ERROR   2020.Aug.10  Monday 15:49:17 
+com.demo.Log4jMain FATAL  -   HELLO from FATAL   2020.Aug.10  Monday 15:49:17 
+com.demo.Log4jMain INFO  -   HELLO  from INFO   2020.Aug.10  Monday 15:51:41 
+com.demo.Log4jMain WARN  -   Hello from WARN   2020.Aug.10  Monday 15:51:41 
+com.demo.Log4jMain ERROR  -   Hello from ERROR   2020.Aug.10  Monday 15:51:41 
+com.demo.Log4jMain FATAL  -   HELLO from FATAL   2020.Aug.10  Monday 15:51:41 
+com.demo.Log4jMain WARN  -   Hello from WARN   2020.Aug.10  Monday 15:52:18 
+com.demo.Log4jMain ERROR  -   Hello from ERROR   2020.Aug.10  Monday 15:52:18 
+com.demo.Log4jMain FATAL  -   HELLO from FATAL   2020.Aug.10  Monday 15:52:18 
