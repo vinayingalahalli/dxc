@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="t1" class="com.demo.model.Team">
+		<property name="tid" value="30000"></property>
+		<property name="teamName" value="INDIA"></property>
+		<property name="coachName" value="Ravi Shastri"></property>
+	</bean>
+	
+	<bean id="t2" class="com.demo.model.Team">
+		<property name="tid" value="30001"></property>
+		<property name="teamName" value="MUMBAI INDIANS"></property>
+		<property name="coachName" value="Anil Kumble"></property>
+	</bean>
+	
+	<bean id="t3" class="com.demo.model.Team">
+		<property name="tid" value="30002"></property>
+		<property name="teamName" value="RCB"></property>
+		<property name="coachName" value="Gary Kristen"></property>
+	</bean>
+	
+	<bean id="t4" class="com.demo.model.Team">
+		<property name="tid" value="30003"></property>
+		<property name="teamName" value="Mumbai WEST"></property>
+		<property name="coachName" value="dinesh"></property>
+	</bean>
+
+	<bean id="a1" class="com.demo.model.Address">
+		<property name="aid" value="9000"></property>
+		<property name="streetName" value="XYZ Street"></property>
+		<property name="city" value="MUMBAI"></property>
+		<property name="zip" value="400023"></property>
+	</bean>
+	<bean id="a2" class="com.demo.model.Address">
+		<property name="aid" value="9001"></property>
+		<property name="streetName" value="PQR Street"></property>
+		<property name="city" value="DELHI"></property>
+		<property name="zip" value="100099"></property>
+	</bean>
+
+	<bean id="p1" class="com.demo.model.Player">
+		<property name="name" value="Sachin R T"></property>
+		<property name="id" value="100"></property>
+		<property name="age" value="40"></property>
+		<property name="address" ref="a1"></property>
+		<property name="teamList">
+		<list>
+		<ref bean="t1"/>
+		<ref bean="t2"/>
+		<ref bean="t4"/>
+		</list>
+		</property>
+	</bean>
+
+
+	<bean id="p2" class="com.demo.model.Player">
+		<constructor-arg name="id" value="101"></constructor-arg>
+		<constructor-arg name="name" value="Virat Kohli"></constructor-arg>
+		<constructor-arg name="age" value="32"></constructor-arg>
+		<!-- <property name="address" ref="a2"></property> -->
+		<constructor-arg name="address" ref="a2"></constructor-arg>
+		<property name="teamList">
+		<list>
+		<ref bean="t1"/>
+		<ref bean="t3"/>
+		</list>
+		</property>
+	</bean>
+
+</beans>
