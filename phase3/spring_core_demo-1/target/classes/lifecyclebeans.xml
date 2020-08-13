@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="h1" class="com.demo.pojo.Hello" init-method="myInit" destroy-method="myDestroy">
+		<property name="message" value="Hello World from Spring using SETTER"></property>
+	</bean>
+	
+	<bean id="h2" class="com.demo.pojo.Hello" init-method="myInit" destroy-method="myDestroy">
+		<constructor-arg name="message" value="Hello World from Spring using CONSTRUCTOR"></constructor-arg>
+	</bean>
+</beans>
