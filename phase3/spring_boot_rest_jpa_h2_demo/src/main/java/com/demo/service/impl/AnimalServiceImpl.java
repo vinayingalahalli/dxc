@@ -1,11 +1,13 @@
 package com.demo.service.impl;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.demo.dao.AnimalRepository;
+import com.demo.exception.BusinessException;
 import com.demo.model.Animal;
 import com.demo.service.AnimalService;
 
@@ -28,9 +30,18 @@ public class AnimalServiceImpl implements AnimalService {
 	}
 
 	@Override
-	public Animal getAnimalById(int id) {
-
-		return dao.findById(id).get();
+	public Animal getAnimalById(int id)  throws BusinessException{
+		if(id<=0) {
+			throw new BusinessException("Entered id "+id+" is invalid");
+		}
+		Animal animal=null;
+		try {
+			animal=dao.findById(id).get();
+		}catch(NoSuchElementException e) {
+			throw new BusinessException("No animal found for the id "+id);
+		}
+		
+		return animal;
 	}
 
 	@Override

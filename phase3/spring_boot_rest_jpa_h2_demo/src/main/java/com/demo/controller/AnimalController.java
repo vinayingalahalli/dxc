@@ -3,6 +3,10 @@ package com.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,6 +15,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.demo.exception.BusinessException;
 import com.demo.model.Animal;
 import com.demo.service.AnimalService;
 
@@ -19,6 +24,8 @@ public class AnimalController {
 
 	@Autowired
 	private AnimalService service;
+	
+	private MultiValueMap<String, String> map;
 
 	@PostMapping("/animal")
 	public Animal addAnimal(@RequestBody Animal animal) {
@@ -33,9 +40,15 @@ public class AnimalController {
 	}
 
 	@GetMapping("/animal/{id}")
-	public Animal getAnimalById(@PathVariable int id) {
+	public ResponseEntity<Animal> getAnimalById(@PathVariable int id) {
 
-		return service.getAnimalById(id);
+		try {
+			return new ResponseEntity<>(service.getAnimalById(id),HttpStatus.OK);
+		} catch (BusinessException e) {
+			map=new LinkedMultiValueMap<>();
+			map.add("errorMessage", e.getMessage());
+			return new ResponseEntity<>(null,map, HttpStatus.NOT_FOUND);
+		}
 	}
 
 	@DeleteMapping("/animal/{id}")
