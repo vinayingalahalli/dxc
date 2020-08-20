@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Demo</title>
+</head>
+<body>
+    <table style="width:100%;background-color: teal; color: tomato;" border="1px">
+        <caption>This is a colspan demo</caption>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Age</th>
+            <th>City</th>
+            <th colspan="2">Contact Number</th>
+        </tr>
+        <tr>
+            <td>Ravi</td>
+            <td>Kumar</td>
+            <td>22</td>
+            <td>Hyderabad</td>
+            <td>1234567899</td>
+            <td>1234567890</td>
+        </tr>
+        <tr>
+            <td>Guru</td>
+            <td>Raj</td>
+            <td>22</td>
+            <td>Bangalore</td>
+            <td>9234567899</td>
+            <td>9234567890</td>
+        </tr>
+        <tr>
+            <td>Swetha</td>
+            <td>Kumari</td>
+            <td>23</td>
+            <td>Hyderabad</td>
+            <td>8234567899</td>
+            <td>8234567890</td>
+        </tr>
+        <tr>
+            <td>Monisha</td>
+            <td>Kumari</td>
+            <td>22</td>
+            <td>Mumbai</td>
+            <td>7234567899</td>
+            <td>7234567890</td>
+        </tr>
+    </table>
+
+    <table style="width:100%;background-color: teal; color: tomato;" border="1px">
+        <caption>This is a rowspan demo</caption>
+        <tr>
+            <th>FirstName</th>
+            <td>Ravi</td>
+            <td>Guru</td>
+            <td>Swetha</td>
+            <td>Monisha</td>
+            
+        </tr>
+        <tr>
+            <th>LastName</th>
+            <td>Kumar</td>
+            <td>Raj</td>
+            <td>Kumari</td>
+            <td>Kumari</td>
+            
+        </tr>
+        <tr >
+            <th rowspan="2">Contact Numbers</th>
+            <td>9234567899</td>
+        </tr>
+        <tr>
+            <td>9234567890</td>  
+        </tr>
+        </table>
+</body>
+</html>
