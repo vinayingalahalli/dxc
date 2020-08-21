@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Demo</title>
+</head>
+
+<body>
+    <h1>Simple Table Demo</h1>
+    <table border="1px" style="width: 100%; text-align: center; background-color: turquoise; color: tomato;">
+        <caption>This is PLAYERS Table</caption>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Team Name</th>
+        </tr>
+        <tr>
+            <td>1000</td>
+            <td>Sachin R Tendulkar</td>
+            <td>Mumbai</td>
+            <td>INDIA</td>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>Saurav Ganguly</td>
+            <td>Kolkata</td>
+            <td>INDIA</td>
+        </tr>
+    </table>
+
+    <h1>Table with colspan Demo</h1>
+    <table border="1px" style="width: 100%; text-align: center; background-color:yellow; color: tomato;">
+        <caption>This is PLAYERS Table With COLSPAN</caption>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Team Name</th>
+            <th colspan="2">Contact Number</th>
+        </tr>
+        <tr>
+            <td>1000</td>
+            <td>Sachin R Tendulkar</td>
+            <td>Mumbai</td>
+            <td>INDIA</td>
+            <td>1234567899</td>
+            <td>1234567898</td>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>Saurav Ganguly</td>
+            <td>Kolkata</td>
+            <td>INDIA</td>
+            <td>9234567899</td>
+            <td>9234567898</td>
+        </tr>
+    </table>
+
+    <h1>Table with rowspan Demo</h1>
+    <table border="1px" style="width: 100%; text-align: center; background-color:yellow; color: tomato;">
+        <caption>This is PLAYERS Table With ROWSPAN</caption>
+        <tr>
+            <th>Name</th>
+            <th>Sachin Ramesh Tendulkar</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Contact Number</th>
+            <td>1234567899</td>
+        </tr>
+        <tr>
+            <td>1234567890</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><address>d no 200, west side, north street 4th cross,some area, some city</address></td>
+        </tr>
+</body>
+
+</html>

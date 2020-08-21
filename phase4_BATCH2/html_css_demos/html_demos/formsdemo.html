@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Demo</title>
+</head>
+
+<body>
+    <h3><u>HTML Form and Input Types Demo</u></h3>
+    <h4>Note: Use <mark>novalidate</mark> as a attribute to form tag to disable all the error handling functionality of
+        html form </h4>
+    <form action="#">
+        <table border="1px">
+            <tr>
+                <td><label>Username</label></td>
+                <td><input type="text" name="username" required="true"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><label>Contact Number</label></td>
+                <td><input type="number" name="contact" placeholder="Enter Contact Number"></td>
+            </tr>
+            <tr>
+                <td><label>PAN Number</label></td>
+                <td><input type="text" name="pan" required="true" title="Please provide valid PAN in AAAAA1111A format"
+                        pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"></td>
+            </tr>
+            <tr>
+                <td><label>Dob</label></td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td><label>Which Week</label></td>
+                <td><input type="week" name="week"></td>
+            </tr>
+            <tr>
+                <td><label>Month</label></td>
+                <td><input type="month" name="month"></td>
+            </tr>
+            <tr>
+                <td><label>What Time you logged in?</label></td>
+                <td><input type="time" name="logInTime"></td>
+            </tr>
+            <tr>
+                <td><label>Enter Your LinkedIN URL</label></td>
+                <td><input type="url" name="linkedIN"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td><input type="radio" name="gender" value="F">Female &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"
+                        name="gender" value="M">Male </td>
+            </tr>
+            <tr>
+                <td><label>Hobbies</label></td>
+                <td><input type="checkbox" name="hobby" value="Gaming">Gaming &nbsp;&nbsp;&nbsp;&nbsp;<input
+                        type="checkbox" name="hobby" value="Other Hobbies">Others </td>
+            </tr>
+            <tr>
+                <td><label>Country</label></td>
+                <td>
+                    <select name="country">
+                        <option value="India">INDIA</option>
+                        <option value="Others">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Upload Profile</label></td>
+                <td><input type="file" name="profile"></td>
+            </tr>
+            <tr>
+                <td><label>Select favt color</label></td>
+                <td><input type="color" name="color"></td>
+            </tr>
+            <tr>
+                <td><label>Hidden Field</label></td>
+                <td><input type="hidden" name="hidden" value="12233"></td>
+            </tr>
+            <tr>
+                <td><label>Range</label></td>
+                <td><input type="range"  min="100" max="99999" name="cost"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
