@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS DEMO</title>
+</head>
+
+<body>
+    <h3>HTML Forms DEMO</h3>
+    <h3>Use <mark>novalidate</mark> next to/within form tag to take off all the default html validations</h3>
+    <form >
+        <table border="1px">
+            <tr>
+                <td><label>First Name</label></td>
+                <td> <input type="text" placeholder="Enter FirstName" /></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td> <input type="password" required="true"/></td>
+            </tr>
+            <tr>
+                <td><label>Contact Number</label></td>
+                <td> <input type="number" /></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td> <input type="email" /></td>
+            </tr>
+            <tr>
+                <td><label>DOB</label></td>
+                <td> <input type="date" /></td>
+            </tr>
+            <tr>
+                <td><label>Favourite Color</label></td>
+                <td> <input type="color" /></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td> <input type="radio" name="gender" value="Female" />F &nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="Male" />M</td>
+            </tr>
+            <tr>
+                <td><label>Country</label></td>
+                <td><select>
+                    <option value="INDIA">INDIA</option>
+                    <option value="OTHERS">OTHERS</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>Hobbies</label></td>
+                <td> <input type="checkbox" name="hobby" value="Dance" />Dance &nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobby" value="Other Hobby" />Other Hobby</td>
+            </tr>
+            <tr>
+                <td><label>Address</label></td>
+                <td> <textarea placeholder="Enter Address" rows="10" cols="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Login Time</label></td>
+                <td> <input type="time" /></td>
+            </tr>
+            <tr>
+                <td><label>Which Week are we in now</label></td>
+                <td> <input type="week" /></td>
+            </tr>
+            <tr>
+                <td><label>Telephone</label></td>
+                <td> <input type="tel" /></td>
+            </tr>
+            <tr>
+                <td><label>Month</label></td>
+                <td> <input type="month" /></td>
+            </tr>
+            <tr>
+                <td><label>Range</label></td>
+                <td> <input type="range" min="1000" max="99999" /></td>
+            </tr>
+            <tr>
+                <td><label>Give your LinkedIN URL</label></td>
+                <td> <input type="url" /></td>
+            </tr>
+            <tr>
+                <td><label>Telephone</label></td>
+                <td> <input type="tel" /></td>
+            </tr>
+            <tr>
+                <td><label>PAN Number</label></td>
+                <td> <input type="text" required pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" title="Please enter a valid PAN Number"/></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit" /></td>
+                <td><input type="reset" value="Reset" /></td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+
+</html>
