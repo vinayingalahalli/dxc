@@ -1,0 +1,21 @@
+p{
+    color: hotpink;
+}
+#one{
+    border:2px solid violet;
+    height: 250px;
+    width: 200px;
+}
+.myclass{
+    border:2px solid tomato;
+    height: 250px;
+    width: 200px;
+}
+.fontclass{
+    color:darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+body{
+    background-color: lightblue;
+}

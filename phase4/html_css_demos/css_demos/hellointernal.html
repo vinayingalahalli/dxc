@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Css Demo</title>
+    <style>
+        p{
+            color: hotpink;
+        }
+        #one{
+            border:2px solid violet;
+            height: 250px;
+            width: 200px;
+        }
+        .myclass{
+            border:2px solid tomato;
+            height: 250px;
+            width: 200px;
+        }
+        .fontclass{
+            color:darkgreen;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+        }
+        body{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello HI I AM PARA - 1 and I will be styled with tag name and internal css</p>
+    <p>Hello HI I AM PARA - 2 and I will be styled with tag name and internal css</p>
+    <div id="one">
+        Hey Hi I am div - 1 , I will be styled using internal css and by ID
+    </div>
+    <div class="myclass fontclass">
+        Hey Hi I am div - 2, I will be styled using internal css and by class
+    </div>
+    <div class="fontclass" style="color: tomato;">
+        Hey Hi I am div - 3, I will be styled using internal css and by class
+    </div>
+</body>
+</html>
