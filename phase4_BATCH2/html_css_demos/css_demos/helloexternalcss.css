@@ -1,0 +1,26 @@
+p{
+    border: 1px solid tomato;
+    color: slateblue;
+    
+}
+#mydiv{
+    width: 250px;
+    height: 200px;
+    border:2px dotted blueviolet;
+    color: brown;
+}
+.myclass1{
+    width: 350px;
+    height: 250px;
+    border:2px double forestgreen;
+    color: greenyellow;
+}
+.myclass2{
+    background-color: indianred;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    border-radius: 5px;
+    padding:25px 50px 75px 100px;
+    
+}
+/*I am CSS comment*/
