@@ -21,6 +21,17 @@ p{
     font-size: x-large;
     border-radius: 5px;
     padding:25px 50px 75px 100px;
-    
+    margin-left:450px;
+    margin-top: -300px;
+}
+body{
+    background-color: aliceblue;
 }
 /*I am CSS comment*/
+
+.testBorder{
+    /* width: 350px; */
+    max-width: 500px;/* make it responsive use msx-width,  min-width , max-height, min-height*/
+    height: 250px;
+    border-style: inset;
+}

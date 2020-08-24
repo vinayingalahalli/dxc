@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables CSS Demo</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        /* table, th, td{
+            border:1px solid black;
+        } */
+        th{
+            height: 50px;
+            text-align: center;
+            background-color: pink;
+        }
+        td{
+            height: 50px;
+            vertical-align: bottom;
+        }
+        th,td{
+            padding:15px;
+            border-bottom: 1px solid black;
+        }
+        tr:hover{
+            background-color: tomato;
+        }
+        tr:nth-child(even){
+            background-color: antiquewhite;
+        }
+        div{
+            overflow-x: auto;
+        }
+            </style>
+</head>
+<body>
+    <h1>Table with colspan Demo</h1>
+    <div>
+    <table >
+        <caption>This is PLAYERS Table With COLSPAN</caption>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Team Name</th>
+            <th colspan="2">Contact Number</th>
+        </tr>
+        <tr>
+            <td>1000</td>
+            <td>Sachin R Tendulkar</td>
+            <td>Mumbai</td>
+            <td>INDIA</td>
+            <td>1234567899</td>
+            <td>1234567898</td>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>Saurav Ganguly</td>
+            <td>Kolkata</td>
+            <td>INDIA</td>
+            <td>9234567899</td>
+            <td>9234567898</td>
+        </tr>
+        <tr>
+            <td>1002</td>
+            <td>MS Dhoni</td>
+            <td>Jharkhand</td>
+            <td>INDIA</td>
+            <td>8234567899</td>
+            <td>8234567898</td>
+        </tr>
+        <tr>
+            <td>1003</td>
+            <td>Virat Kohli</td>
+            <td>Delhi</td>
+            <td>INDIA</td>
+            <td>7234567899</td>
+            <td>7234567898</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
