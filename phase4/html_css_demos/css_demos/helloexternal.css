@@ -19,3 +19,15 @@ p{
 body{
     background-color: lightblue;
 }
+
+.testborder{
+    border-style: outset;
+    border-color: rebeccapurple;
+    border-radius: 5px;
+    border-width: 4px;
+}
+
+.testpadding{
+    padding: 25px 50px 75px 100px;
+    max-width: 500px;
+}
