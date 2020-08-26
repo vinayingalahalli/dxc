@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+<title>Nav Bar Demo</title>
+</head>
+<body>
+<h1>Demo on Building Navigation Bars using BS</h1>
+<div class="container">
+    <h2>Demo - 1</h2>
+    <nav class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Item 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 4</a>
+        </li>
+    </nav>
+</div>
+
+<div class="container">
+    <h2>Demo - 2</h2>
+    <nav class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Item 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 4</a>
+        </li>
+    </nav>
+</div>
+<div class="container">
+    <h2>Demo - 3</h2>
+    <nav class="nav">
+        <li class="nav-item justify-content-end">
+            <a class="nav-link active" href="#">Item 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 4</a>
+        </li>
+    </nav>
+</div>
+<div class="container">
+    <h2>Demo - 4</h2>
+    <nav class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Item 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 4</a>
+        </li>
+    </nav>
+</div>
+<div class="container">
+    <h2>Demo - 5</h2>
+    <nav class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Item 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 4</a>
+        </li>
+    </nav>
+</div>
+<div class="container">
+    <h2>Demo - 6</h2>
+    <nav class="nav nav-pills nav-justified">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Item 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 4</a>
+        </li>
+    </nav>
+</div>
+<div class="container">
+    <h2>Demo - 7</h2>
+    <nav class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Item 1</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Item 2</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Item 2.1</a>
+                <a class="dropdown-item" href="#">Item 2.2</a>
+                <a class="dropdown-item" href="#">Item 2.3</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 4</a>
+        </li>
+    </nav>
+</div>
+<div class="container">
+    <h2>Demo - 8</h2>
+    <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  data-toggle="tab" href="#register">Register</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Only For logged In users</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="container tab-pane active" id="home">Hi This is HOME Menu</div>
+        <div class="container tab-pane" id="login">Login Menu</div>
+        <div class="container tab-pane" id="register">Register Menu</div>
+    </div>
+</div>
+
+
+<div class="container">
+    <h2>Demo - 9</h2>
+    <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  data-toggle="pill" href="#register">Register</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Only For logged In users</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="container tab-pane active" id="home">Hi This is HOME Menu</div>
+        <div class="container tab-pane" id="login">Login Menu</div>
+        <div class="container tab-pane" id="register">Register Menu</div>
+    </div>
+</div>
+
+
+<div class="container">
+    <h2>Demo - 10</h2>
+    <nav class="navbar navbar-primary">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Item 1</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Item 2</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Item 2.1</a>
+                <a class="dropdown-item" href="#">Item 2.2</a>
+                <a class="dropdown-item" href="#">Item 2.3</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Item 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 4</a>
+        </li>
+    </ul>
+    </nav>
+</div>
+
+<div class="container">
+    <h1>Demo 11</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand">Brand</a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Item 1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
