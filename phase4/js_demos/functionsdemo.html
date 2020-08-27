@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Functions Demo</title>
+</head>
+<body>
+    <h1>Please check out console</h1>
+</body>
+<script>
+function sayHi(){
+    return "Hello Function";
+}
+console.log(sayHi());
+function sayHi(x){
+    return "Hello Function "+x;
+}
+console.log(sayHi("hello"));
+console.log(sayHi(100000));
+function add() {
+    let sum = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+}
+console.log(add(1, 2))
+console.log(add(1, 2,3,4,5,6))
+console.log(add())
+
+showHoist();
+
+function showHoist(){
+    console.log("function hoisting eg")
+}
+
+console.log("Demo on Anonymous Functions")
+let hi= function () {
+    console.log('hello anonymous')
+}
+hi();
+console.log(typeof(hi));
+
+(function () {
+    console.log("This is Immediately invoked fuction execution(IIFE)")
+})();
+
+let x=100;
+let y=20;
+(function () {
+    console.log("IIFE - demo -2");
+    console.log(x+y);
+})(x,y);
+
+console.log("Arrow functions demooo.......");
+let h= ()=> console.log("Hello arrow");
+h();
+let sum=(a,b,c)=>a+b+c;
+console.log(sum(100,22,3444));
+</script>
+</html>

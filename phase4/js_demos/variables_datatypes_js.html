@@ -19,6 +19,16 @@
     <dt>const from ES5</dt>
     <dd>- const is same as let but it is constant i.e you cannot modify the value of it</dd>
 </dl>
+<h3>Js Data Types</h3>
+<h3>JS provides 6 primitive data types and one complex type which is object and other types like array, function, regex</h3>
+<ol>
+    <li>null</li>
+    <li>undefined</li>
+    <li>number</li>
+    <li>string</li>
+    <li>boolean</li>
+    <li>symbol - added from ES6</li>
+</ol>
     <script>
         var x=100;
         console.log("x = "+x);
@@ -64,6 +74,29 @@
           // console.log("c = "+c);not accessible
         }
         testConst();
+        x='reassigned to string';
+        console.log("x = "+x);
+        x=false;
+        console.log("x = "+x);
+
+        function testDataTypes(){
+            let i=100;
+            console.log("i = "+i+ " type of i is "+(typeof(i)));
+            let r;
+            console.log("r = "+r+ " type of r is "+(typeof(r)));
+            let u=null;
+            console.log("u = "+u+ " type of u is "+(typeof(u)));
+            let obj={};
+            console.log("obj = "+obj+ " type of obj is "+(typeof(obj)));
+            let person={
+                fname:"Ravi",
+                lname:"Kumar"
+            };
+            console.log("person = "+person.fname+ " "+person.lname+" type of person is "+(typeof(person)));
+            let ar=[10,20,30];
+            console.log("ar = "+ar+ " type of ar is "+(typeof(ar)));
+        }
+        testDataTypes();
     </script>
 </body>
 </html>
