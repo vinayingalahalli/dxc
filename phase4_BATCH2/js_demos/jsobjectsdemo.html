@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects Demo</title>
+</head>
+<body>
+    <h1>Objects in JS... Please check console</h1>
+
+    <script>
+        function testObjects(){
+            let person={
+                fname:"Sachin",
+                lname:"Tendulkar",
+                age:44,
+                printPerson:function(){
+                    return this.fname+' '+this.lname+' Age = '+this.age;
+                }
+            }
+            console.log(person)
+            console.log(person.printPerson());
+
+            function Customer(name,age,city){
+                this.name=name;
+                this.age=age;
+                this.city=city;
+            }
+            let c1=new Customer("girish k",22,'Hyderabad');
+            let c2=new Customer("shwetha",23,'Hyderabad');
+            console.log(JSON.stringify(c1));
+            console.log(JSON.stringify(c2));
+            let d=Object.values(c1);
+            console.log(d);
+            Customer.prototype.country="INDIA";
+            console.log(c1.country);
+            console.log(c2.country);
+            console.log('array of objects')
+            let customers=[c1,c2];
+            customers.push(new Customer('rohan',26,'Mumbai'));
+
+            customers.forEach(c=>{
+                console.log(JSON.stringify(c));
+            });
+
+            //assignment try customers.sort(compare object)
+        }
+        testObjects();
+    </script>
+</body>
+</html>

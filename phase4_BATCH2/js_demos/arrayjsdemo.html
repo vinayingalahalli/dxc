@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arrays</title>
+</head>
+<body>
+    <h1>JS Arrays demo please look into console......</h1>
+
+    <script>
+        function testArrays(){
+            let arr=[]; // recommended
+           // arr=new Array();
+           console.log(arr);
+           arr[0]=100;
+           arr[1]=99;
+           arr[2]=100;
+           console.log(arr);
+
+           let fruits=['Apple','Orange','Banana','Kiwi'];
+           console.log(fruits);
+           console.log(fruits.toString());
+           console.log(fruits.join());
+           console.log(fruits.join('-'));
+           console.log('demo foreach method with callback using arrow function')
+           fruits.forEach(x=>{
+               console.log(x);
+           });
+           fruits.push('Mango');
+           fruits.push('Muskmelon');
+           fruits.push('Orange');
+           fruits.push('Watermelon');
+           console.log('after push');
+           console.log(fruits.join());
+           fruits.pop();
+           console.log('after pop');
+           console.log(fruits.join());
+           console.log(fruits.indexOf('Orange'));
+           console.log(fruits.lastIndexOf('Orange'));
+           console.log(fruits.reverse());
+           console.log(fruits.find(x=>{
+               if(x.length==5){
+                   return x;
+               }
+           }));
+           console.log(fruits.filter(x=>{
+               if(x.length==5){
+                   return x;
+               }
+           }));
+
+
+           let arr1=[22,33,44,54];
+           console.log(arr1.map(x=>x*3));
+           console.log(arr1);
+
+           console.log('slice demo')
+           console.log(fruits.slice(1));
+           console.log(fruits.slice(1,3));
+
+           console.log('splice demo')
+           //console.log(fruits.splice(0,2));
+           //console.log(fruits.splice(fruits.indexOf('Orange'),1));
+           console.log(fruits.splice(fruits.indexOf('Orange'),1,'Pineapple'));
+           console.log(fruits)
+           console.log(fruits.sort());
+        }
+        testArrays();
+    </script>
+</body>
+</html>
