@@ -14,6 +14,40 @@
             for(let i=0;i<fruits.length;i++){
                 console.log(fruits[i]);
             }
+            let emp=new Array();
+            emp[0]='Abhi';
+            emp[1]='Jai';;
+            let emp1=new Array('Gowri','Ganesha','Shiva');
+            console.log(emp1);
+            let allEmp=emp.concat(emp1);
+            console.log(allEmp);
+            let marks=[10,20,30,12,15,99,200];
+
+            console.log(marks.filter(function (val) {
+                return val>30;
+            }));
+
+            console.log(marks.find(x=>x>30));
+            console.log('foreach demo');
+            marks.forEach(x=>{
+            console.log(x);
+            })
+            console.log(marks.join());
+            console.log(marks.join('-'));
+            console.log(marks.reverse());
+            console.log(marks.sort());
+            marks.push(1000);
+            console.log(marks);
+            marks.pop();
+            console.log(marks);
+            console.log('demo slice');
+            console.log(marks.slice(2,4));
+            console.log(marks.slice(2));
+            console.log('demo splice');
+            console.log(marks.splice(0,1,10));
+            console.log(marks);
+            console.log(marks.splice(0,2,10,1000));
+            console.log(marks);
         }
         testArray();
     </script>
