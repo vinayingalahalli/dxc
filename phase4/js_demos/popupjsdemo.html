@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Demo</title>
+</head>
+<body>
+    <h1>Test Pop ups</h1>
+    <button onclick="hialert()">Test Alert</button><br/>
+    <button onclick="hiconfirm()">Test Confirm</button><br/>
+    <button onclick="hiprompt()">Test Prompt</button><br/>
+    <script>
+       function hialert(){
+            alert("Hello World from Alert");
+        }
+        function hiprompt() {
+            let x=prompt("Please enter your email to continue....")
+            if(x==''){
+                document.write("User didnt enter email");
+            }else{
+                document.write("Your email is "+x);
+            }
+        }
+        function hiconfirm() {
+            let b=confirm("Do you wish to continue?");
+            if(b){
+                document.write("User said YES");
+            }else{
+                document.write("User said NO");
+            }
+        }
+    </script>
+</body>
+</html>
