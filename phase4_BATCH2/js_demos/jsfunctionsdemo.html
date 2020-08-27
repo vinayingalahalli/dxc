@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+
+<body>
+    <h1>JS Functions demo... Please check out console for output</h1>
+
+    <script>
+        function sayHello() {
+            return "Hello Function";
+        }
+        console.log(sayHello());
+
+        function sayHello(name) {
+            return "Hello " + name;
+        }
+        console.log(sayHello('GOWRi'));
+
+        function testParam(message) {
+            if (!message) {
+                return "No mEssage"
+            } else {
+                return "The message is " + message;
+            }
+        }
+        console.log(testParam());
+        console.log(testParam('Good afternoon'));
+
+        function add() {
+            let sum = 0;
+            for (let i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+            return sum;
+        }
+        console.log(add())
+        console.log(add(33,2,11,22));
+        console.log(add(33,2));
+        console.log(add(33,2,8,9,9,9999));
+
+        helloHoist();
+
+        function helloHoist(){
+            console.log('hello from hoisting')
+        }
+
+        console.log("Anonymous function demo");
+        let x=function(){
+            return "hello Anonymous";
+        };
+        console.log(x());
+        console.log('type of x is '+typeof(x));
+        console.log("IIFEs function demo");
+        (function(){
+            console.log('Hey hi i am (IIFE)Immediately Invoked Function Expression')
+        })();
+        (function(x,y){
+            console.log('Hey hi i am (IIFE)Immediately Invoked Function Expression');
+            console.log('result of x*y is '+(x*y));
+        })(20,20);
+
+       let r= (function(x,y){
+            console.log('Hey hi i am (IIFE)Immediately Invoked Function Expression');
+           // console.log('result of x*y is '+(x*y));
+           return x*y;
+        })(20,20);
+        console.log(r);
+
+        console.log('Arrow(=>) Functions');
+        let a=()=>console.log('hello arrow function');
+        a();
+        let o=(x,y)=>{
+            console.log('wihin o arrow function')
+            console.log('x = '+x);
+            console.log('y = '+y);
+            return x+y;
+        }
+        console.log(o(99,99))
+    </script>
+</body>
+
+</html>
