@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Variables and Data Types</title>
+</head>
+<body>
+    <h1>Demo on Variables and DataTypes</h1>
+    <h2>Please check console for outputs</h2>
+
+    <div>
+        <h2>JS Variables</h2>
+        <p>Anything in JS can be declared using <mark>var, let(from ES 2015) and const(from ES 2015)</mark></p>
+        <dl>
+            <dt>var</dt>
+            <dd>-var is global to js, meaning any variable we initialize using var it remains throughout the js page and across the js pages too</dd>
+            <dt>let</dt>
+            <dd>-let is local to anything</dd>
+            <dt>const</dt>
+            <dd>-const is same as let wrt visibility but you cannot modify the value of const</dd>
+        </dl>
+    </div>
+<br/>
+<br/>
+<hr/>
+    <div>
+        <h1>Data Types in JS</h1>
+        <ol>
+            <li>string</li>
+            <li>number</li>
+            <li>null</li>
+            <li>undefined</li>
+            <li>boolean</li>
+            <li>object</li>
+            <li>function</li>
+            <li>array</li>
+        </ol>
+    </div>
+
+    <script>
+         var x=100;
+        function testVariables(){
+            console.log("Hello from console");
+           
+            console.log("x = "+x);
+            x='heyyy';
+            console.log("x = "+x);
+            x=100;
+            var y='100';
+            console.log('type of x - '+ typeof(x));
+            console.log('type of y - '+typeof(y));
+            console.log(x==y);
+            console.log(x===y);
+        }
+        testVariables();
+
+        function testVar(){
+            console.log("calling testVar()");
+            var m=99;
+            for(var i=0;i<10;i++){
+                console.log(m+i);
+            }
+            console.log('m = '+m);
+            console.log('i = '+i);
+            console.log('x = '+x);
+        }
+        testVar();
+        // console.log('m = '+m);
+        //     console.log('i = '+i); not accessible
+
+        function testLet(){
+            console.log("calling testLet()");
+            let m=99;
+            for(let i=0;i<10;i++){
+                console.log(m+i);
+            }
+            console.log('m = '+m);
+            //console.log('i = '+i); NA
+            console.log('x = '+x);
+        }
+        testLet();
+        function testConst(){
+            console.log("calling testConst()");
+            const m=99;
+           // m++; non modifiable
+            for(let i=0;i<10;i++){
+                const o=10000;
+                console.log(m+i);
+            }
+            console.log('m = '+m);
+          //  console.log('o = '+o); NA
+            console.log('x = '+x);
+        }
+        testConst();
+        function testDataTypes(){
+            console.log('testing data types');
+            let d=100;
+            console.log("type of d = "+typeof(d)+" value  is "+d)
+            let p='suresh';
+            console.log("type of p = "+typeof(p)+" value  is "+p)
+            let m=true;
+            console.log("type of m = "+typeof(m)+" value  is "+m)
+            let k;
+            console.log("type of k = "+typeof(k)+" value  is "+k)
+            let l=null;
+            console.log("type of l = "+typeof(l)+" value  is "+l)
+            let arr=[100,122];
+            console.log("type of arr = "+typeof(arr)+" value  is "+arr)
+            let person={
+                fname:"Sachin",
+                lname:"Tendulkar"
+            };
+            console.log("type of person = "+typeof(person)+" value  is "+person.fname+' '+person.lname)
+        }
+        testDataTypes();
+    </script>
+</body>
+</html>
