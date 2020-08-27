@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Demo </title>
+</head>
+<body>
+    <h1>Demo on Variables and datatypes</h1>
+    <h2>Check out the console</h2>
+    <p>In JS we can decalre any variable using <q>var</q> and from ES5 we
+    got <q>let</q> and <q>const</q> as well to provide more visibility to the local scope
+</p>
+<dl>
+    <dt>var</dt>
+    <dd>- is global scope, meaning you can access that value not only in that js but also across the files as well</dd>
+    <dt>let from ES5</dt>
+    <dd>- let is a local scope visibilty will be within the current js file itself</dd>
+    <dt>const from ES5</dt>
+    <dd>- const is same as let but it is constant i.e you cannot modify the value of it</dd>
+</dl>
+    <script>
+        var x=100;
+        console.log("x = "+x);
+        var y="hello" , z='world';
+        console.log(y+" "+z);
+
+        function testVar(){
+            console.log("Testing Var")
+            var m=100;
+            for(var i=1;i<10;i++){
+                console.log(i+m);
+            }
+            console.log("m = "+m);
+            console.log("i = "+i);
+            console.log("x = "+x);
+        }
+
+        testVar();
+        //console.log("m = "+m); not accessible
+       // console.log("i = "+i); not accesible
+       function testLet(){
+            console.log("Testing Let")
+            let m=100;
+            for(let i=1;i<10;i++){
+                console.log(i+m);
+            }
+            console.log("x = "+x);
+            console.log("m = "+m);
+           // console.log("i = "+i);not accessible
+        }
+        testLet();
+        function testConst(){
+            console.log("Testing Const")
+            const m=100;
+            for(let i=1;i<10;i++){
+                console.log(i+m);
+                const c=1000;
+                //c++; non modifiable
+            }
+            console.log("x = "+x);
+            console.log("m = "+m);
+           // console.log("i = "+i);not accessible
+          // console.log("c = "+c);not accessible
+        }
+        testConst();
+    </script>
+</body>
+</html>
