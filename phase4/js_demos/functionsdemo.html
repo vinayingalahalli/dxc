@@ -58,5 +58,30 @@ let h= ()=> console.log("Hello arrow");
 h();
 let sum=(a,b,c)=>a+b+c;
 console.log(sum(100,22,3444));
+
+console.log("Js closures");
+// A closure is a function which preserves the outer scope in its inner scope
+function greet(){
+    let message="hellooooo";
+    function sayHello(){
+        console.log(message);
+    }
+    return sayHello;
+}
+let hey=greet();
+hey();
+
+function sayHelloClosure(message){
+    return function (name) {
+        return message+' '+name;
+    }
+}
+
+let greetSam=sayHelloClosure("Good Morning");
+let greetAnand=sayHelloClosure("Good Evening");
+
+console.log(greetSam('SAM'));
+console.log(greetAnand('ANAND'));
+
 </script>
 </html>
