@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<title>Git Api AJAX Demo</title>
+</head>
+<body>
+    <h1>Demo on GIT AJAX </h1>
+<button class="btn btn-primary" type="button" onclick="getAllGitUsers()">Get All GIT USERS</button>
+<div class="container" id="results">
+    <h1>List of Git Users Using Fetch API</h1>
+</div>
+<!-- Enter Git User Login Id<input type="text" id="gitid">
+<button class="btn btn-primary" type="button" onclick="getGitUserById()">Get GIT USer By Login Id</button> -->
+<script>
+    function getAllGitUsers(){
+        let url='https://api.github.com/users';
+       fetch(url)
+       .then(res=>res.json())
+       .then(res1=>{console.log(res1);
+        let data="<table class='table table-bordered table-striped'>";
+                data=data+"<thead class='thead-dark'><tr><th>ID</th><th>Login</th><th>Avatar</th></tr></thead>";
+                    res1.forEach(element => {
+                        data=data+"<tr><td>"+element.id+"</td>"
+                        data=data+"<td>"+element.login+"</td>"
+                        data=data+"<td><img class='rounded' src='"+element.avatar_url+"' alt='user image' style='width:100px;height:100px'/></td></tr>"
+                    });
+                data=data+"</table>";
+                    document.getElementById("results").innerHTML=data;
+       })
+    }
+
+
+    function getGitUserById(){
+        let id=document.getElementById("gitid").value;
+        let url='https://api.github.com/users/'+id;
+        let xhr=new XMLHttpRequest();
+
+        xhr.open('GET',url,true);
+
+        xhr.onload=function(){
+            if(this.readyState==4 && this.status === 200){
+                let res=JSON.parse(this.responseText);
+                console.log(res);
+                let data="<table class='table table-bordered table-striped'>";
+                data=data+"<thead class='thead-dark'><tr><th>ID</th><th>Login</th><th>Avatar</th></tr></thead>";
+                   // res.forEach(element => {
+                        data=data+"<tr><td>"+res.id+"</td>"
+                        data=data+"<td>"+res.login+"</td>"
+                        data=data+"<td><img class='rounded' src='"+res.avatar_url+"' alt='user image' style='width:100px;height:100px'/></td></tr>"
+                  //  });
+                data=data+"</table>";
+                    document.getElementById("results").innerHTML=data;
+            }
+        }
+        xhr.send();
+    }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
