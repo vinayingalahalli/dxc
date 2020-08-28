@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+<title>Demo Table with JS</title>
+</head>
+<body>
+<h1>Creating Table Rows Using JS Demo</h1>
+<div class="container">
+    <h1>List of Players in IPL</h1>
+    <table id="playersList" class="table table-light table-striped table-hover table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Player Name</th>
+                <th>Country Origin</th>
+                <th>IPL Team Name</th>
+                <th>Specialized In</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <h1>Enter Player Details to add to the table</h1>
+    <form method="post" action="#" name="playerForm" onsubmit="return addPlayer()">
+        PlayerName
+        <input class="form-control" type="text" name="playerName" placeholder="Enter PlayerName">
+        
+            <label for="my-select-country">Country Origin</label>
+            <select id="my-select-country" class="form-control" name="country">
+                <option value="INDIA">INDIA</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="my-select-ipl">IPL Team Name</label>
+            <select id="my-select-ipl" class="form-control" name="ipl">
+                <option value="RCB">RCB</option>
+                <option value="CSK">CSK</option>
+                <option value="SH">SH</option>
+                <option value="RR">RR</option>
+                <option value="MI">MI</option>
+                <option value="Other">Other</option>
+            </select>
+            Specialization
+            <input class="form-control" type="text" name="special" placeholder="Enter Specialization">
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+</div>
+
+<script>
+    function addPlayer(){
+        function Player(playerName,country,ipl,special){
+            this.playerName=playerName;
+            this.country=country;
+            this.ipl=ipl;
+            this.special=special;
+        }
+
+        let player=new Player(
+        document.playerForm.playerName.value,
+        document.playerForm.country.value,
+        document.playerForm.ipl.value,
+        document.playerForm.special.value
+        );
+
+        let table=document.getElementById("playersList").getElementsByTagName("tbody")[0];
+        let row=table.insertRow(table.length); //tr got created
+        let cell1=row.insertCell(0); //td
+        cell1.innerText=player.playerName;//data of the td
+
+        let cell2=row.insertCell(1); //td
+        cell2.innerText=player.country;//data of the td
+
+        let cell3=row.insertCell(2); //td
+        cell3.innerText=player.ipl;//data of the td
+
+        let cell4=row.insertCell(3); //td
+        cell4.innerText=player.special;//data of the td
+
+        document.playerForm.playerName.value=""
+        document.playerForm.country.value=""
+        document.playerForm.ipl.value=""
+        document.playerForm.special.value=""
+
+        return false;
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
