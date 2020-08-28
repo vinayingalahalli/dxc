@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Validation</title>
+</head>
+<body>
+    <form action="#" method="post" onsubmit="return validateForm()">
+        Enter Username <input type="text" id="username"/><br/>
+        <span id="errUserName" style="color:red;"></span><br/>
+        Enter Password <input type="password" id="password"/><br/>
+        <span id="errPassword" style="color:red;"></span><br/>
+        <input type="submit" value="Login">
+    </form>
+
+    <script>
+        function validateForm(){
+            let username=document.getElementById("username").value;
+            let password=document.getElementById("password").value;
+            let validUsernameFlag=validateUserName(username);
+            let validPasswordFlag=validatePassword(password);
+            if(validUsernameFlag && validPasswordFlag){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        function validateUserName(username){
+            let message="";
+            if(username.length==0){
+                message ="username cannot be empty";
+            }
+            if(username.length>10){
+                message ="username too long";
+            }
+            document.getElementById("errUserName").innerText=message;
+            if(message.length!=0){
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+        function validatePassword(password){
+            let message="";
+            if(password.length==0){
+                message ="password cannot be empty";
+            }
+            if(password.length>15){
+                message ="password too long";
+            }
+            document.getElementById("errPassword").innerText=message;
+            if(message.length!=0){
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<title>Title</title>
+</head>
+<body>
+    <h1><u>Add Data to Table Demo</u></h1>
+    <br/><br/>
+    <div class="container" style="width: 50%;">
+        <h1>Add the Country Names You Know</h1>
+        <table class="table table-light table-bordered table-striped" id="countryList">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Country Names</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+<div class="container">
+    <form>
+    Enter Country Name
+    <input class="form-control" type="text" id="country">
+        <button class="btn btn-primary" type="button" onclick="addCountry()">Add</button>
+    </form>
+</div>
+<script>
+    function addCountry(){
+        let country=document.getElementById("country").value;
+        if(country.length==0){
+            alert("Please enter country name and click on add");
+            return false;
+        }else{
+            let table=document.getElementById("countryList").getElementsByTagName("tbody")[0];
+            let newRow=table.insertRow(table.length);
+            let data=newRow.insertCell(0);
+            data.innerText=country;
+            document.getElementById("country").value="";
+            return true;
+        }
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
