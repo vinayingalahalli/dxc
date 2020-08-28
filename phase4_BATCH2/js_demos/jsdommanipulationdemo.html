@@ -28,6 +28,17 @@
     <button class="btn btn-primary" type="button" onclick="sayHello()">Click Me</button>
 </div>
 
+<div class="container">
+    <h2>With Forms</h2>
+   <form action="#" name="form1" onsubmit="return formTest()">
+    Enter Name
+       <input class="form-control" type="text" name="firstName">
+       <input class="form-control" type="text" name="firstNameReplica">
+    <button class="btn btn-primary" type="submit" >Submit</button>
+   </form>
+   <span id="message" class="text-success"></span>
+</div>
+
 <script>
     document.getElementById("divid1").innerText="<h1>Hello with innerText</h1>";
     document.getElementById("divid2").innerHTML="<h1>Hello with innerHTML</h1>";
@@ -42,6 +53,15 @@
         p2.classList.add("text-danger");
         p2.innerText="Helllo "+fname;
     }
+
+    function formTest(){
+        let firstName=document.form1.firstName.value;
+        document.form1.firstNameReplica.value=firstName;
+        alert("hello "+firstName);
+        document.getElementById("message").innerText="Helllooooooo "+firstName;
+        return false;
+    }
+    // Try Other DOM Events too like ondblclick, onkeypress, onfocus, onblur, onload
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
