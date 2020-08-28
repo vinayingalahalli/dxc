@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+<title>JS DOM</title>
+</head>
+<body>
+    <h1>Dom Demos</h1>
+<div class="container" id="divid1">
+    <h1>Test innerText</h1>
+</div>
+<div class="container" id="divid2">
+    <h1>Test innerHtml</h1>
+</div>
+<div class="container">
+<p id="p1">Hello Para</p>
+</div>
+
+<div class="container">
+    Enter Name<input type="text" id="fname"/>
+    <p id="p2"></p>
+    <button class="btn btn-primary" type="button" onclick="sayHello()">Click Me</button>
+</div>
+
+<script>
+    document.getElementById("divid1").innerText="<h1>Hello with innerText</h1>";
+    document.getElementById("divid2").innerHTML="<h1>Hello with innerHTML</h1>";
+    document.getElementById("divid2").classList.add("text-primary");
+    document.getElementById("p1").style.textDecoration="underline";
+    document.getElementById("divid1").style.backgroundColor="grey";
+    
+    function sayHello(){
+        let fname=document.getElementById("fname").value;
+        alert("hello "+fname);
+        let p2=document.getElementById("p2");
+        p2.classList.add("text-danger");
+        p2.innerText="Helllo "+fname;
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

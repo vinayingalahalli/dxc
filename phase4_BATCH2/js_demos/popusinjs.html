@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js PopUp Demo</title>
+</head>
+<body>
+    <h1>Check Popups in JS</h1>
+    <div>
+        <h1>Alert Box Demo</h1>
+        <button type="button" onclick="testAlert()">Click Here for Alert</button>
+    </div>
+<br/><br/>
+    <div>
+        <h1>Confirm Box Demo</h1>
+        <button type="button" onclick="testConfirm()">Click Here for Confirm</button>
+    </div>
+    <br/><br/>
+    <div>
+        <h1>Prompt Box Demo</h1>
+        <button type="button" onclick="testPrompt()">Click Here for Prompt</button>
+    </div>
+    <script>
+        function testAlert(){
+            alert("Hellllooo from ALERT BOX")
+        }
+
+        function testConfirm(){
+            let x=confirm("Do you wish to continue?")
+            if(x){
+                document.write("<h3>User confirmed</h3>");
+            }else{
+                document.write("<h3>User doesnt wish to continue</h3>");
+            }
+        }
+
+        function testPrompt(){
+            let x=prompt("Please enter your email to continue")
+            if(x.length>0){
+                document.write("<h3>User confirmed with email"+x+"</h3>");
+            }else{
+                document.write("<h3>User doesnt wish to continue</h3>");
+            }
+        }
+    </script>
+</body>
+</html>
