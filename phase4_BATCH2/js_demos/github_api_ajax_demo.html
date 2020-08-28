@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+<title>AJAX Demo</title>
+</head>
+<body>
+<h1>Demo on Github API using AJAX</h1>
+
+
+<div class="container" id="results">
+    
+</div>
+
+<button class="btn btn-primary" type="button" onclick="getAllGitUsers()">Get All GIT Users</button>
+
+<div class="container">
+    <h4>Get a GITHUB User By Login Id</h4>
+    <input type="text" placeholder="Enter GITHUB LOGIN ID" id="gitid"/>
+    <button class="btn btn-primary" type="button" onclick="getGitUserByLoginId()">Get GIT User By Id</button>
+    <p class="text-danger" id="error"></p>
+</div>
+<script src="github_api_ajax_demo.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
