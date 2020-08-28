@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+<title>JS DOM demos</title>
+</head>
+<body>
+
+<div class="container">
+<h1>Demo - 1</h1>
+    Enter Name<input class="form-control" type="text" id="fname">
+    <p id="message" class="text-info"></p>
+    Name Replica<input class="form-control" type="text" id="fnamerep">
+    <button class="btn btn-primary" type="button" onclick="sayHello()">Click</button>
+</div>
+
+<div class="container">
+    <h1>Demo - 2</h1>
+    <form name="form1" action="#" onsubmit="return helloForm()">
+        Enter First Name<input class="form-control" type="text" name="firstName">
+    <p id="messageFname" class="text-info"></p>
+    <button class="btn btn-primary" type="submit" >Submit</button>
+    </form>
+    </div>
+
+<script>
+    function sayHello(){
+        let fname=document.getElementById("fname").value;
+        //alert("Hello "+fname);
+      //  document.getElementById("message").innerText="<mark>Hello "+fname+"</mark>";
+      document.getElementById("message").innerHTML="<mark>Hello "+fname+"</mark> How are you doing today?";
+      document.getElementById("fnamerep").value=fname;
+    }
+
+    function helloForm(){
+        let firstName=document.form1.firstName.value;
+        document.getElementById("messageFname").innerHTML="<mark>Hello "+firstName+"</mark> How are you doing today?";
+        document.getElementById("messageFname").classList.remove('text-info');
+        document.getElementById("messageFname").classList.add('text-warning');
+        document.getElementById("messageFname").classList.add('text-center');
+        document.getElementById("messageFname").style.textDecoration="underline";
+        return false;
+    }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
