@@ -8,6 +8,9 @@ var Hello = /** @class */ (function () {
     Hello.prototype.sayHello = function () {
         console.log('Hello   ' + this.name);
     };
+    Hello.helloStatic = function () {
+        console.log("hello static");
+    };
     return Hello;
 }());
 exports.Hello = Hello;

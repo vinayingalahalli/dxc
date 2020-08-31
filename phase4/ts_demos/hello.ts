@@ -8,4 +8,8 @@ export class Hello{
     public sayHello():void{
         console.log('Hello   '+this.name);
     }
+
+    public static helloStatic(){
+        console.log("hello static");
+    }
 }
