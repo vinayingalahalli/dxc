@@ -1,0 +1,19 @@
+{
+  "name": "mytsbatch2",
+  "version": "1.0.0",
+  "description": "hey this is a test [ackage.json file",
+  "main": "helloclass.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "url.git"
+  },
+  "keywords": [
+    "json",
+    "ts"
+  ],
+  "author": "VINAY",
+  "license": "UNLICENSED"
+}
