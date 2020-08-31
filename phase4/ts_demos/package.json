@@ -1,0 +1,15 @@
+{
+  "name": "hellopack",
+  "version": "1.0.0",
+  "description": "this is test pack",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "NA"
+  },
+  "author": "VINAY",
+  "license": "ISC"
+}
