@@ -1,0 +1,29 @@
+<div>
+    <h2>{{message}}</h2>
+    <img [src]="url" style="height: 200px; width: 200px;" alt="Jerry's Image">
+    <br/>
+    <br/>
+    <button type="button" class="btn btn-primary" (click)="sayHelloEvent()">Click Here</button>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+<div >
+    <h2>Two Way Binding Demo</h2>
+    <h3>Enter the data below and see it reflect in TS</h3>
+    <input type="text" placeholder="Enter Customer ID" [(ngModel)]="customer.id"/><br/>
+    <input type="text" placeholder="Enter Customer Name" [(ngModel)]="customer.name"/><br/>
+    <input type="text" placeholder="Enter Customer Age" [(ngModel)]="customer.age"/><br/>
+    <input type="url" placeholder="Give URL of Customer Image" [(ngModel)]="customer.avatar"/><br/>
+</div>
+<br/>
+<br/>
+<div>
+    <h3>Output of customer object from TS</h3>
+    <span>Customer ID : {{customer.id}}</span><br/>
+    <span>Customer Name : {{customer.name}}</span><br/>
+    <span>Customer Age : {{customer.age}}</span><br/>
+    <span>Customer Avatar/Image : <img class="rounded-circle" [src]="customer.avatar" style="height: 200px; width: 300px;" alt="Customer's Image"> </span><br/>
+</div>
