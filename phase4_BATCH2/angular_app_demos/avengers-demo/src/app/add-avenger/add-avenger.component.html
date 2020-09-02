@@ -5,6 +5,7 @@
     <input class="form-control" type="text" placeholder="Enter Age" [(ngModel)]="avenger.age" >
     <input class="form-control" type="text" placeholder="Enter Speciality" [(ngModel)]="avenger.speciality" >
     <input class="form-control" type="url" placeholder="Give Image URL" [(ngModel)]="avenger.avatar" >
+    <input class="form-control" type="text" placeholder="Enter Favourite Color" [(ngModel)]="avenger.favColor" >
     <button class="btn btn-primary" type="button" (click)="addAvenger()">Add Avenger</button>
 </div>
 
@@ -20,15 +21,22 @@
                 <th>Age</th>
                 <th>Speciality</th>
                 <th>Avatar</th>
+                <th>Favourite Color</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let a of avengersList">
+            <tr *ngFor="let a of avengersList" [ngSwitch]="a.favColor" >
                 <td>{{a.id}}</td>
                 <td>{{a.name}}</td>
                 <td>{{a.age}}</td>
                 <td>{{a.speciality}}</td>
                 <td><img [src]="a.avatar" style="width: 200px; height: 200px;" class="rounded-circle" alt="{{a.name}}'s Image'" /></td>
+                <td>
+                    <span *ngSwitchCase="'blue'" style="background-color: blue;">Blueeeee</span>
+                    <span *ngSwitchCase="'red'" style="background-color: red;">Redddddd</span>
+                    <span *ngSwitchCase="'green'" style="background-color: green;">Greeennnnnn</span>
+                    <span *ngSwitchDefault class="text-warning" >This Avenger Hates Colors</span>
+                </td>
             </tr>
         </tbody>
     </table>

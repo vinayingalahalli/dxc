@@ -4,4 +4,5 @@ export class Avenger {
     age:number;
     speciality:string;
     avatar:string;
+    favColor:string;
 }
