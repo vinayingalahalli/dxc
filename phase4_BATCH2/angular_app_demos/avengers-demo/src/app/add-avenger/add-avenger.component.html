@@ -1,0 +1,42 @@
+<div class="container">
+    <h3>Enter Below Details to Add Avenger to the Table</h3>
+    <input class="form-control" type="text" placeholder="Enter Id" [(ngModel)]="avenger.id" >
+    <input class="form-control" type="text" placeholder="Enter Name" [(ngModel)]="avenger.name" >
+    <input class="form-control" type="text" placeholder="Enter Age" [(ngModel)]="avenger.age" >
+    <input class="form-control" type="text" placeholder="Enter Speciality" [(ngModel)]="avenger.speciality" >
+    <input class="form-control" type="url" placeholder="Give Image URL" [(ngModel)]="avenger.avatar" >
+    <button class="btn btn-primary" type="button" (click)="addAvenger()">Add Avenger</button>
+</div>
+
+<br/><br/>
+
+<div class="container" *ngIf="avengerTable">
+    <h3><u>List of Avengers</u></h3>
+    <table class="table table-light table-bordered table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Speciality</th>
+                <th>Avatar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of avengersList">
+                <td>{{a.id}}</td>
+                <td>{{a.name}}</td>
+                <td>{{a.age}}</td>
+                <td>{{a.speciality}}</td>
+                <td><img [src]="a.avatar" style="width: 200px; height: 200px;" class="rounded-circle" alt="{{a.name}}'s Image'" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary" type="button" (click)="removeLastAvenger()">Remove Last Avenger</button>
+    <br/>
+    <br/>
+    Enter Avenger Id to Remove that Avenger
+    <input class="form-control" type="text" placeholder="Enter Id" [(ngModel)]="avengerIdModel" />
+    <button class="btn btn-primary" type="button" (click)="removeAvengerById()">Remove Avenger By ID</button>
+
+</div>
