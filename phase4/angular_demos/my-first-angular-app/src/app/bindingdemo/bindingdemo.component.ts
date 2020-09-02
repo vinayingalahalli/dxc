@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Player } from '../player';
 
-class Player{
-  id:number;
-  name:string;
-  avatar:string;
-}
+
 
 @Component({
   selector: 'app-bindingdemo',

@@ -1,0 +1,42 @@
+<div class="container">
+    <h4>Enter Below Data to Add the Player to The Table</h4>
+    <input class="form-control" placeholder="Player ID" type="text" [(ngModel)]="playerModel.id">
+    <input class="form-control" placeholder="Player Name" type="text" [(ngModel)]="playerModel.name">
+    <input class="form-control" placeholder="Player Age" type="text" [(ngModel)]="playerModel.age">
+    <input class="form-control" placeholder="Player Country" type="text" [(ngModel)]="playerModel.country">
+    <input class="form-control" placeholder="Player Image" type="url" [(ngModel)]="playerModel.avatar">
+    <button class="btn btn-primary" type="button" (click)="addPlayer()">Add Player</button>
+    <button class="btn btn-primary" type="button" (click)="removeLastPlayer()">Remove Last Player</button>
+</div>
+<br/>
+<br/>
+
+<div class="container playerTable" *ngIf=playerTable >
+    <h3>Player Details Table</h3>
+   <table class="table table-light table-bordered table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+                <th>Avatar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let player of playerList">
+                <td>{{player.id}}</td>
+                <td>{{player.name}}</td>
+                <td>{{player.age}}</td>
+                <td>{{player.country}}</td>
+                <td><img class="rounded-circle" alt="player's image" style="height: 200px; width:200px;" [src]="player.avatar"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container playerTable" *ngIf=playerTable >
+    <h3>Remove Player By Id</h3>
+    <input class="form-control" placeholder="Enter Player ID" type="text" [(ngModel)]="idModel">
+    <button class="btn btn-primary" type="button" (click)="removePlayerById()">Remove Player By Id</button>
+</div>

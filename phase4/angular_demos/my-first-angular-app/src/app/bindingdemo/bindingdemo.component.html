@@ -3,7 +3,7 @@
     <h2>{{message}}</h2>
     <br/>
     <img alt="Jerry's image" style="width: 250px; height: 250px;" [src]="url"/>
-    <button type="button" (click)="sayHello()">Click for event binding</button>
+    <button type="button" class="btn btn-primary" (click)="sayHello()">Click for event binding</button>
 </div>
 
 
@@ -17,5 +17,5 @@
     <h2>Player Data is </h2>
    <span> ID {{player.id}}</span><br/>
    <span> Name {{player.name}}</span><br/>
-   <span> Players Image <img alt="player's image" style="width: 250px; height: 250px;" [src]="player.avatar"/></span>
+   <span> Players Image <img class="rounded-circle" alt="player's image" style="width: 250px; height: 250px;" [src]="player.avatar"/></span>
 </div>
