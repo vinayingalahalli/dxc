@@ -1,0 +1,24 @@
+<div>
+  <h2>Welcome to {{title}} app</h2>
+  <h2>Custome Pipes Demo</h2>
+  <h3>Title with Uppercase Pipe : {{title | uppercase}}</h3>
+  <h3>Title with Lowercase Pipe : {{title | lowercase}}</h3>
+  <h3>Date without Pipe : {{dateObj}}</h3>
+  <h3>Date with Pipe : {{dateObj | date:'dd-MM-yyyy'}}</h3>
+  <h3>Date with Pipe : {{dateObj | date:'dd-MMMM-yyyy EEE HH:mm:ss a'}}</h3>
+ <h3>Currency Pipe INR: {{789900.999 | currency:'INR'}}</h3> 
+ <h3>Currency Pipe INR: {{789900.999 | currency:'USD'}}</h3>
+ <h3>Decimal Pipe : {{320.2342225 | number:'3.4'}}</h3>
+ <h3>Percent Pipe : {{.056 | percent}}</h3>
+ <h3>Slice Pipe : {{fruits | slice:3:6}}</h3>
+ <h3>JSON customerObj without pipe : {{customerObj}}</h3>
+ <h3>JSON customerObj with pipe : {{customerObj | json}}</h3>
+</div>
+<br/>
+<br/>
+<div>
+  <h2>Custom Pipes Demo</h2>
+  <h3>Sqrt of 625 is {{625 | sqrt}}</h3>
+  <h3>Custom Pipe for Printing fullName thi pipe takes more than one param</h3>
+  <h3>FullName is {{salutation | fullName:firstName:lastName}}</h3>
+</div>
