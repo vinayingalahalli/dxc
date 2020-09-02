@@ -1,0 +1,19 @@
+<div>
+  <h1>Pipes Demo</h1>
+  <h3>Title is : {{title}}</h3>
+  <h3>Title with Uppercase pipe : {{title | uppercase}}</h3>
+  <h3>Title with Uppercase pipe : {{title | lowercase}}</h3>
+  <h3>Currency pipe : {{7566.99 | currency:"INR"}}</h3>
+  <h3>Date without  pipe : {{mydate}}</h3>
+  <h3>Date with  pipe : {{mydate | date:'d/M/y'}}</h3>
+  <h3>Date with  pipe : {{mydate | date:'dd/MM/yyyy HH:mm:ss a'}}</h3>
+  <h3>Decimal  pipe : {{432.222223232 | number:'3.5'}}</h3>
+  <h3>JSON Obj without pipe {{jsonobj}}</h3>
+  <h3>JSON Obj with pipe {{jsonobj |json}}</h3>
+  <h3>Percentage  pipe {{0.56|percent}}</h3>
+  <h3>Slice pipe {{fruits | slice:2:5}}</h3>
+<br/><br/>
+  <h2>Custom Pipe Demo</h2>
+  <h3>Custom Sqrt pipe- Sqrt of 625 is :  {{625 | sqrt}}</h3>
+  <h3>Custom fullName pipe demo : {{firstName | fullName:lastName}}</h3>
+</div>
