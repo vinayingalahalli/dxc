@@ -1,11 +1,17 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { BindingdemoComponent } from './bindingdemo/bindingdemo.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        BindingdemoComponent
+      ],
+      imports:[
+        FormsModule
       ],
     }).compileComponents();
   }));
@@ -16,16 +22,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'my-first-angular-app'`, () => {
+  it(`should have as title 'My First Angular Application'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('my-first-angular-app');
+    expect(app.title).toEqual('My First Angular Application');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('my-first-angular-app app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('My First Angular Application is running! herrrrrrrrreeeeee which is developed by Vinay N I');
   });
 });
