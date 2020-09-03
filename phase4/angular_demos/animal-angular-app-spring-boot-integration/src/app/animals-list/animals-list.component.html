@@ -1,0 +1,23 @@
+<div class="container">
+    <h3><u>List of Animals</u></h3>
+    <table class="table table-light table-bordered table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Category</th>
+                <th>Avatar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let animal of animalsList">
+                <td>{{animal.id}}</td>
+                <td>{{animal.name}}</td>
+                <td>{{animal.age}}</td>
+                <td>{{animal.category}}</td>
+                <td><img class="rounded-circle" alt="{{animal.name}}'s Image" [src]="animal.avatar" style="height: 150px; width: 150px;"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
