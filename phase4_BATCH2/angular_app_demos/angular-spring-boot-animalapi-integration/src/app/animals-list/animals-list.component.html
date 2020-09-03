@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="card-deck">
+    <div class="card" style="width: 100px;" *ngFor="let animal of animalsList">
+        <img class="card-img-top" [src]="animal.avatar" alt="{{animal.name}}'s Image">
+        <div class="card-body text-center">
+            <h5 class="card-title">{{animal.name}}'s Details</h5>
+            <p class="card-text">Id : {{animal.id}}</p>
+            <p class="card-text">Category : {{animal.category}}</p>
+            <p class="card-text">Age : {{animal.age}}</p>
+        </div>
+    </div>
+    
+</div>
+</div>

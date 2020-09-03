@@ -1,0 +1,29 @@
+<div class="jumbotron" style="height: 250px;">
+  <h1 class="display-4">Welcome to {{title}}</h1>
+  <hr class="my-4">
+</div>
+
+<div class="container">
+  <nav class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/createAnimal">Create Animal</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/updateAnimal" >Update Animal</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/deleteAnimal" >Delete Animal</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/animalsList" >Animals List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/searchAnimal" >Search Animals</a>
+    </li>
+  </nav>
+</div>
+
+<br/>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
