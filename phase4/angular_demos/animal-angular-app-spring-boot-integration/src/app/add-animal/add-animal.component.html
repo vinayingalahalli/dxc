@@ -1,1 +1,8 @@
-<p>add-animal works!</p>
+<div class="container">
+    <h3><u>Enter Animal Details Below to add in DB</u></h3>
+    <input class="form-control" type="text" [(ngModel)]="animal.name" placeholder="Enter Animal Name"/>
+    <input class="form-control" type="text" [(ngModel)]="animal.age" placeholder="Enter Animal Age"/>
+    <input class="form-control" type="text" [(ngModel)]="animal.category" placeholder="Enter Animal Category"/>
+    <input class="form-control" type="url" [(ngModel)]="animal.avatar" placeholder="Paste Animal Image URL"/>
+    <button class="btn btn-primary" type="button" (click)="addAnimal()">Add Animal</button>
+</div>
